@@ -88,12 +88,12 @@ function Snake() {
 
 // Drawing a square for each segment of the snake's body
 Snake.prototype.draw = function () {
-    this.segments[0].drawSquare("Blue");
+    this.segments[0].drawSquare("Green");
     var isEvenSegment = false;
     
     for (var i = 1; i < this.segments.length; i++) {
         if(isEvenSegment){
-            this.segments[i].drawSquare("Green");
+            this.segments[i].drawSquare("Blue");
         } else {
           this.segments[i].drawSquare("Yellow");
         }
